@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace cg_task1
@@ -27,7 +21,7 @@ namespace cg_task1
             g.FillRectangle(Brushes.Red, 10, 50, 1, 1);
             g.DrawLine(pen, 10, 10, 100, 100);
             g.DrawRectangle(pen, 300, 50, 100, 300);
-            g.DrawEllipse(pen, 150, 100, 100, 60);
+            g.FillEllipse(Brushes.Red, 150, 100, 100, 60);
             pictureBox.Image = bmp;
         }
 
